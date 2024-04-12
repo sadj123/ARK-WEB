@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   return (
-    <div className="flex justify-center bg-bone">
+    <div className="h-screen flex justify-center bg-bone">
       <Image
         onClick={() => {
           router.push("/home/createOffer");

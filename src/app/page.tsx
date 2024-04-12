@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 import { collection, onSnapshot, query } from "firebase/firestore";
 import { db } from "../utils/firebase";
-
+import { redirect } from "next/navigation";
+import Image from "next/image";
+import SplashImage from "../images/splash.png";
 export default function Home() {
   const [users, setUsers] = useState<any[]>([]);
   // Initialize Firebase
@@ -19,24 +21,19 @@ export default function Home() {
     return unsubscribe;
   };
   useEffect(() => {
-    let unsuscribe: any;
-    (async () => {
-      unsuscribe = await fetchPost();
-    })();
-    return () => {
-      // unsuscribe();
-    };
+    // let unsuscribe: any;
+    // (async () => {
+    //   unsuscribe = await fetchPost();
+    // })();
+    // return () => {
+    //   // unsuscribe();
+    // };
+    redirect("/home");
   }, []);
   return (
-    <main className=" bg-slate-500 text-3xl font-bold underline">
-      <h1 className="text-center">Users</h1>
-      <div className="grid grid-cols-3 gap-4">
-        {users.map((user) => (
-          <div key={user.id} className="bg-red-400 p-4">
-            <h2>{user.name}</h2>
-            <p>{user.occupation}</p>
-          </div>
-        ))}
+    <main className="h-screen bg-bone bg-slate-500 text-3xl font-bold underline">
+      <div className="flex justify-center bg-bone">
+        <Image src={SplashImage} alt="Home" className="h-screen w-auto" />
       </div>
     </main>
   );
