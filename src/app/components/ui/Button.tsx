@@ -1,8 +1,16 @@
 import React, { PropsWithChildren } from "react";
-
-export default function Button({ children }: PropsWithChildren<{}>) {
+type Props = {
+  onClick?: () => void;
+};
+export default function Button({
+  children,
+  onClick,
+}: PropsWithChildren<Props>) {
   return (
-    <div className="flex justify-center items-center w-39 h-14 font-normal text-15 leading-21 text-secondary border-secondary border rounded-xl">
+    <div
+      onClick={onClick}
+      className="flex justify-center items-center w-39 h-14 font-normal text-15 leading-21 text-secondary border-secondary border rounded-xl"
+    >
       {children}
     </div>
   );
