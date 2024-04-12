@@ -14,6 +14,8 @@ export const CardHeader = ({username, photoUrl, profession}: Props) => {
                 src={photoUrl}
                 alt={username}
                 className="w-12 h-12 rounded-full mr-4 object-cover border-4 border-orange-500"
+                width={48}
+                height={48}
             />
             <div>
                 <h5 className="text-md font-bold text-black">{username}</h5>
