@@ -15,7 +15,7 @@ import Icon from "../ui/Icon";
 import { usePathname, useRouter } from "next/navigation";
 export default function BottomTabMenu() {
   return (
-    <div className="bg-white fixed bottom-0 right-0 w-full flex justify-around items-center border-t border-gray-300 h-20">
+    <div className="bg-body fixed bottom-0 right-0 w-full flex justify-around items-center border-t border-bone h-20">
       <MenuItem
         icon={home}
         activeIcon={homeActive}
@@ -44,7 +44,7 @@ export default function BottomTabMenu() {
         icon={profile}
         activeIcon={profileActive}
         label={"Profile"}
-        route="profile"
+        route="profile/myke_thebest"
       />
     </div>
   );
@@ -72,9 +72,7 @@ function MenuItem({
       className="flex flex-col items-center"
     >
       <Icon src={isActive ? activeIcon : icon} />
-      <span
-        className={`text-xs ${isActive ? "text-primary" : "text-secondary"}`}
-      >
+      <span className={`text-xs ${isActive ? "text-primary" : "text-bone"}`}>
         {label}
       </span>
     </div>
