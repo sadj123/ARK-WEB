@@ -24,7 +24,7 @@ const stepsInformation = [
     options: ["General", "Specific", "Niche"],
   },
 ];
-export default function page() {
+export default function CreateOffer() {
   const [curretStepIndex, setCurrentStepIndex] = useState<number>(1);
   const [currentStep, setCurrentStep] = useState(
     stepsInformation[curretStepIndex]
