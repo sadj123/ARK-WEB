@@ -18,6 +18,7 @@ module.exports = {
       secondary: "#171A1F",
       white: colors.white,
       gray: colors.gray,
+      bone: "#fafafa",
     },
     extend: {},
   },
