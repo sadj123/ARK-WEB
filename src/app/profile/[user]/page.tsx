@@ -20,26 +20,26 @@ const TikTokerProfile = () => {
             imageUrl: '/post.png',
             title: 'Lorem ipsum dolor sit amet',
             username: 'John Doe',
-            photoUrl: '/user.svg',
+            photoUrl: '/user.png',
             profession: 'TikToker'
         },
         {
             imageUrl: '/post.png',
             title: 'Lorem ipsum dolor sit amet',
             username: 'John Doe',
-            photoUrl: '/user.svg',
+            photoUrl: '/user.png',
             profession: 'TikToker'
         },
         {
             imageUrl: '/post.png',
             title: 'Lorem ipsum dolor sit amet',
             username: 'John Doe',
-            photoUrl: '/user.svg',
+            photoUrl: '/user.png',
             profession: 'TikToker'
         }
     ];
     return (
-        <div className="container mx-auto max-w-2xl">
+        <div className="container bg-body mx-auto max-w-2xl">
 
             <ProfileHeader/>
             <ProfileStats/>
