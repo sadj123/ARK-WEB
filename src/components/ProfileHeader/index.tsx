@@ -6,9 +6,11 @@ const ProfileHeader = () => {
     return (
         <div className="mt-8 rounded-md p-4 text-center">
             <Image
-                src="https://i.pravatar.cc/150?u=fake@pravatar.com"
+                src="/user.svg"
                 alt="Michael Carter"
                 className="w-48 h-48 rounded-full mb-4 mx-auto border-4 border-orange-500"
+                width={100}
+                height={100}
             />
             <h2 className="text-3xl font-bold">Michael Carter</h2>
             <p className="text-gray-500">
